@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Cole's Ping Pong</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="game" width="800" height="400"></canvas>
+  <div id="controls" class="controls">
+    <div class="row">
+      <button id="preset-easy">1 • Easy</button>
+      <button id="preset-medium">2 • Medium</button>
+      <button id="preset-hard">3 • Hard</button>
+      <button id="reset-btn">Reset (R)</button>
+      <button id="pause-btn">Pause (Space)</button>
+    </div>
+    <div class="row">
+      <label for="ai-speed">AI Speed</label>
+      <input id="ai-speed" type="range" min="0.2" max="1.8" step="0.01">
+      <span id="ai-speed-val"></span>
+    </div>
+    <div class="row">
+      <label>Sound</label>
+      <button id="mute-btn">Mute</button>
+    </div>
+    <div class="row small">Toggle AI: <strong>P</strong> • Fine-tune: <strong>-</strong>/<strong>=</strong></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
